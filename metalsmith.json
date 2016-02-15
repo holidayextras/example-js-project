@@ -1,0 +1,25 @@
+{
+  "source": "./src",
+  "destination": "./dist",
+  "clean": false,
+  "metadata": {
+    "title": "HX Example JS Project",
+    "description": "This is demo of preferred tools and build processes."
+  },
+  "plugins": {
+    "metalsmith-markdown": {},
+    "metalsmith-ignore": ["javascript/**/*", "stylesheets/**/*", "templates/**/*", "layouts/**/*", "partials/**/*"],
+    "metalsmith-in-place": {
+      "engine": "haml",
+      "partials": "src/partials",
+      "pattern": "*.haml",
+      "rename": true
+
+    },
+    "metalsmith-layouts": {
+      "engine": "haml",
+      "directory": "src/layouts",
+      "partials": "src/partials"
+    }
+  }
+}

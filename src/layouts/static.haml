@@ -1,0 +1,31 @@
+!!! 5
+%html
+  %head
+    %script{ src: 'http://localhost:35729/livereload.js' }
+    %link{ rel: 'stylesheet', href: '/stylesheets/index.css' }
+    %title
+      = title
+  %body
+
+    %header
+      %h1 Holiday Extras
+      %h2 Demo JavaScript Application
+
+    .row
+      .col-md-3
+        %ul.list-group
+          %li
+            %a{ href: 'index.html' }
+              HAML page
+          %li
+            %a{ href: 'markdown.html' }
+              Markdown page
+          %li
+            %a{ href: 'backbone.html' }
+              Backbone Application
+          %li
+            %a{ href: 'react.html' }
+              React Application
+
+      .col-md-9
+        != contents
