@@ -41,7 +41,6 @@
     "chai": "latest",
     "chai-enzyme": "latest",
     "chalk": "latest",
-    "coffee-loader": "latest",
     "commander": "latest",
     "css-loader": "latest",
     "dirty-chai": "latest",
