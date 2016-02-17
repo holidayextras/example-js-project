@@ -6,4 +6,4 @@ dependencies:
     - node_modules
 test:
   override:
-    - npm run ci
+    - npm run ci:circle
