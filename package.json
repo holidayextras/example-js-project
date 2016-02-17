@@ -25,6 +25,7 @@
     "test": "npm-run-all test:* ",
     "test:selenium": "echo \"pending test:selenium\" && exit 0",
     "test:mocha": "mocha ./tests --require ./tests/support/setup.js",
+    "ci": "npm-run-all test:mocha",
     "lint": "npm-run-all lint:*",
     "lint:javascript": "echo \"pending lint:javascript\" && exit 0",
     "lint:less": "echo \"pending lint:less\" && exit 0",
