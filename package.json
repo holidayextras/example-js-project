@@ -4,6 +4,9 @@
   "description": "Build tools example project of the \"preferred\" build process setup at Holiday Extras for reference and new projects. ",
   "main": "index.js",
   "repository": "local",
+  "config": {
+    "port": 3040
+  },
   "scripts": {
     "setup": "echo \"No setup process required\" && exit 0",
     "clean_build": "npm-run-all clean build",
@@ -16,7 +19,7 @@
     "deploy:assets": "echo \"pending deploy:assets\" && exit 0",
     "start": "npm-run-all --parallel start:*",
     "start:metalsmith": "watchy -w ./src/**/*.haml,./src/**/*.md,./src/**/*.html -- npm run build:metalsmith",
-    "start:serve": "serve ./dist -p 3040",
+    "start:serve": "serve ./dist -p $npm_package_config_port",
     "start:selenium": "echo \"pending start:selenium\" && exit 0",
     "start:webpack": "webpack --watch",
     "start:livereload": "livereload ./dist -p 35729",
